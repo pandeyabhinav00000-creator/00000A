@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Namveda Ayurveda — Premium natural Ayurvedic skincare, haircare, and wellness products. Rooted in ancient wisdom, refined for modern living.">
+<title>Namveda Ayurveda — Naturally Pure Living</title>
+<link rel="icon" type="image/png" href="https://i.imgur.com/AzOWZzB.png">
+<link rel="apple-touch-icon" href="https://i.imgur.com/AzOWZzB.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     PRELOADER
+══════════════════════════════════════════ -->
+<div id="preloader">
+  <img id="preloader-logo" src="https://i.imgur.com/AzOWZzB.png" alt="Namveda Ayurveda">
+  <div id="preloader-brand">Namveda Ayurveda</div>
+  <div id="preloader-sub">Loading Experience...</div>
+  <div id="preloader-bar-wrap">
+    <div id="preloader-bar"></div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     HEADER
+══════════════════════════════════════════ -->
+<header id="header">
+  <div class="header-inner">
+
+    <a class="logo-area" onclick="showPage('home');return false" href="#">
+      <div class="logo-img-wrap">
+        <img src="https://i.imgur.com/AzOWZzB.png" alt="Namveda Ayurveda Logo">
+      </div>
+      <div class="logo-text">
+        <div class="brand-name">Namveda Ayurveda</div>
+        <div class="slogan">Naturally Pure Living</div>
+      </div>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#" onclick="showPage('home');return false">Home</a>
+      <a href="#" onclick="showPage('shop');return false">Products</a>
+      <a href="#" onclick="showPage('home');setTimeout(()=>document.querySelector('.about-section')?.scrollIntoView({behavior:'smooth'}),200);return false">About</a>
+      <a href="https://wa.me/918109665754" target="_blank" rel="noopener">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="header-btn" onclick="showPage('wishlist')" title="Wishlist" aria-label="Wishlist">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </button>
+      <button class="header-btn" onclick="showPage('cart')" title="Cart" aria-label="Cart" style="position:relative">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="cart-badge" id="cart-count">0</span>
+      </button>
+      <button class="header-btn" onclick="openLogin()" title="Login" aria-label="Login">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+
+<!-- ══════════════════════════════════════════
+     MAIN (SPA Pages)
+══════════════════════════════════════════ -->
+<div id="main">
+
+
+<!-- ────────────────────────────────────────
+     HOME PAGE
+──────────────────────────────────────── -->
+<div id="page-home" class="page active">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-badge rv rv-fade"><span>✦</span> Ancient Ayurvedic Wisdom</div>
+    <h1 class="rv rv-down">Pure <em>Ayurvedic</em><br>Wellness for You</h1>
+    <p class="hero-sub rv rv-fade rv-d1">Rooted in nature. Refined for modern living. Discover our range of 100% natural Ayurvedic skincare, haircare, and wellness products.</p>
+    <div class="hero-ctas rv rv-up rv-d2">
+      <a href="#" class="btn-primary" onclick="showPage('shop');return false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        Shop Now
+      </a>
+      <a href="https://wa.me/c/918109665754" target="_blank" rel="noopener" class="btn-outline">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Catalog
+      </a>
+    </div>
+    <div class="hero-scroll">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      Scroll
+    </div>
+  </section>
+
+  <!-- Features / Value Props -->
+  <section class="features-section">
+    <div class="container text-center">
+      <span class="section-label rv rv-fade">Why Choose Us</span>
+      <h2 class="section-title rv rv-up">The Namveda <em>Difference</em></h2>
+      <div class="section-divider centered rv rv-fade rv-d1"></div>
+      <div class="features-grid">
+        <div class="feature-card rv rv-up rv-d1">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="feature-title">100% Natural</div>
+          <div class="feature-desc">Every product is formulated with pure, sustainably sourced ingredients. No harmful chemicals, no artificial fragrances.</div>
+        </div>
+        <div class="feature-card rv rv-up rv-d2">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <div class="feature-title">Ancient Wisdom</div>
+          <div class="feature-desc">Our formulations are rooted in 5,000 years of Ayurvedic knowledge, crafted by expert Ayurvedic practitioners.</div>
+        </div>
+        <div class="feature-card rv rv-up rv-d3">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <div class="feature-title">Cruelty Free</div>
+          <div class="feature-desc">We are proud to be cruelty-free. All products are ethically made and never tested on animals.</div>
+        </div>
+        <div class="feature-card rv rv-up rv-d4">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <div class="feature-title">Free Delivery</div>
+          <div class="feature-desc">Enjoy free pan-India delivery on every order. Fast dispatch within 1-2 business days, delivered in 5-7 days.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Carousel -->
+  <section class="categories-section">
+    <div class="container text-center" style="margin-bottom:32px">
+      <span class="section-label rv rv-fade">Browse</span>
+      <h2 class="section-title rv rv-up">Shop by <em>Category</em></h2>
+      <div class="section-divider centered rv rv-fade rv-d1"></div>
+    </div>
+    <div class="cat-track-wrap">
+      <div class="cat-track" id="cat-track"></div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="products-section">
+    <div class="container">
+      <div class="products-header">
+        <div>
+          <span class="section-label rv rv-fade">Our Range</span>
+          <h2 class="section-title rv rv-left">Featured <em>Products</em></h2>
+          <div class="section-divider rv rv-fade rv-d1" style="margin-top:8px"></div>
+        </div>
+        <a href="#" class="btn-view-more rv rv-right" onclick="showPage('shop');return false" style="align-self:flex-end">View All →</a>
+      </div>
+      <div class="products-grid" id="home-products-grid"></div>
+      <div class="view-more-wrap rv rv-up">
+        <a href="#" class="btn-view-more" onclick="showPage('shop');return false">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials-section">
+    <div class="container text-center">
+      <span class="section-label rv rv-fade">Reviews</span>
+      <h2 class="section-title rv rv-up">What Our <em>Customers</em> Say</h2>
+      <div class="section-divider centered rv rv-fade rv-d1"></div>
+    </div>
+    <div class="test-track-outer">
+      <div class="test-track" id="test-track"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap rv rv-left">
+          <img src="https://i.imgur.com/UwNihZW.png" alt="About Namveda Ayurveda" loading="lazy">
+        </div>
+        <div class="rv rv-right">
+          <span class="about-badge">Est. 2024 · Bhopal, MP</span>
+          <h2 class="section-title">About <em>Us</em></h2>
+          <div class="section-divider" style="margin-bottom:20px"></div>
+          <p class="about-text">Discover the power of nature with Namveda Ayurveda! Our expert Ayurvedic doctors bring decades of experience to provide you with premium, all-natural skin and hair care products. Formulated with the wisdom of ancient Ayurveda, our products help you achieve healthy, glowing skin and strong, nourished hair.</p>
+          <ul class="about-points">
+            <li class="about-point rv rv-up rv-d1"><span class="about-point-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span>Expert Ayurvedic doctors with decades of experience</li>
+            <li class="about-point rv rv-up rv-d2"><span class="about-point-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span>Premium, all-natural ingredients — no harmful chemicals</li>
+            <li class="about-point rv rv-up rv-d3"><span class="about-point-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span>Ancient Ayurvedic formulas for modern skin and hair care</li>
+            <li class="about-point rv rv-up rv-d4"><span class="about-point-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span>Free pan-India delivery on every order</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="faq-inner container">
+      <div class="text-center" style="margin-bottom:40px">
+        <span class="section-label rv rv-fade" style="color:rgba(255,255,255,.5)">Got Questions?</span>
+        <h2 class="section-title rv rv-up" style="color:#fff">Frequently Asked <em>Questions</em></h2>
+        <div class="section-divider centered rv rv-fade rv-d1"></div>
+      </div>
+      <div id="faq-list"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="rv rv-fade">
+    <div class="footer-grid container">
+      <div class="footer-brand">
+        <a class="logo-area" href="#" onclick="showPage('home');return false" style="margin-bottom:16px;display:inline-flex">
+          <div class="logo-img-wrap"><img src="https://i.imgur.com/AzOWZzB.png" alt="Logo"></div>
+          <div class="logo-text">
+            <div class="brand-name">Namveda Ayurveda</div>
+            <div class="slogan">Naturally Pure Living</div>
+          </div>
+        </a>
+        <p>Est. 2024 · Fine Avenue Phase 2, Kolar Road, Bhopal, Madhya Pradesh 462042</p>
+        <div class="footer-social" style="margin-top:16px">
+          <a href="https://www.instagram.com/namveda_ayurveda" target="_blank" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://wa.me/918109665754" target="_blank" class="social-btn" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+          <a href="tel:+918109665754" class="social-btn" aria-label="Phone">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.16 6.16l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#" onclick="showPage('home');return false">Home</a></li>
+          <li><a href="#" onclick="showPage('shop');return false">All Products</a></li>
+          <li><a href="#" onclick="filterCategory('Skincare');return false">Skincare</a></li>
+          <li><a href="#" onclick="filterCategory('Haircare');return false">Haircare</a></li>
+          <li><a href="#" onclick="filterCategory('Wellness &amp; Detox');return false">Wellness &amp; Detox</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#" onclick="showPage('home');setTimeout(()=>document.querySelector('.about-section')?.scrollIntoView({behavior:'smooth'}),200);return false">About Us</a></li>
+          <li><a href="tel:+918109665754">Call Us</a></li>
+          <li><a href="https://wa.me/918109665754" target="_blank">WhatsApp</a></li>
+          <li><a href="https://wa.me/c/918109665754" target="_blank">Product Catalog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#" onclick="showPolicyPage('Track your Orders');return false">Track Orders</a></li>
+          <li><a href="#" onclick="showPolicyPage('Return Policy');return false">Return Policy</a></li>
+          <li><a href="#" onclick="showPolicyPage('Privacy Policy');return false">Privacy Policy</a></li>
+          <li><a href="#" onclick="showPolicyPage('Store Policies');return false">Store Policies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>© 2024 Namveda Ayurveda. All rights reserved. | Bhopal, Madhya Pradesh</p>
+      <p>Made with ♥ for natural living</p>
+    </div>
+  </footer>
+
+</div><!-- /page-home -->
+
+
+<!-- ────────────────────────────────────────
+     SHOP PAGE
+──────────────────────────────────────── -->
+<div id="page-shop" class="page">
+  <div class="back-bar">
+    <button class="btn-back" onclick="showPage('home')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+      Back to Home
+    </button>
+    <div class="breadcrumb">
+      <a onclick="showPage('home')">Home</a>
+      <span class="sep">›</span>
+      <span id="shop-breadcrumb">All Products</span>
+    </div>
+  </div>
+  <div class="page-heading container">
+    <h1 class="rv rv-up">Our Products</h1>
+    <p class="rv rv-fade rv-d1">All Natural · All Ayurvedic</p>
+  </div>
+  <section class="products-section" style="padding-top:24px">
+    <div class="container">
+      <div class="section-header" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;flex-wrap:wrap;gap:12px">
+        <h2 class="section-title rv rv-left" id="shop-title">All <em>Products</em></h2>
+        <button onclick="renderShopGrid('all')" style="background:none;border:1px solid var(--border);padding:6px 16px;border-radius:99px;font-size:.8rem;cursor:pointer;color:var(--text-muted);font-family:var(--font-sans)">Show All</button>
+      </div>
+      <div class="products-grid" id="shop-grid"></div>
+    </div>
+  </section>
+  <!-- Footer injected dynamically -->
+  <div id="shop-footer"></div>
+</div>
+
+
+<!-- ────────────────────────────────────────
+     PRODUCT DETAIL PAGE
+──────────────────────────────────────── -->
+<div id="page-product" class="page">
+  <div class="back-bar">
+    <button class="btn-back" onclick="goBack()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+      Back
+    </button>
+    <div class="breadcrumb">
+      <a onclick="showPage('home')">Home</a>
+      <span class="sep">›</span>
+      <a onclick="showPage('shop')">Products</a>
+      <span class="sep">›</span>
+      <span id="pd-breadcrumb-name"></span>
+    </div>
+  </div>
+  <div class="pd-wrap">
+    <div class="pd-grid" id="pd-content"></div>
+  </div>
+</div>
+
+
+<!-- ────────────────────────────────────────
+     CART PAGE
+──────────────────────────────────────── -->
+<div id="page-cart" class="page">
+  <div class="back-bar">
+    <button class="btn-back" onclick="showPage('home')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+      Back to Home
+    </button>
+    <div class="breadcrumb">
+      <a onclick="showPage('home')">Home</a>
+      <span class="sep">›</span>
+      <span>Your Cart</span>
+    </div>
+  </div>
+  <div class="page-heading container rv rv-down">
+    <h1>Your Cart</h1>
+    <p>Review your items</p>
+  </div>
+  <div class="cart-wrap" id="cart-content"></div>
+</div>
+
+
+<!-- ────────────────────────────────────────
+     WISHLIST PAGE
+──────────────────────────────────────── -->
+<div id="page-wishlist" class="page">
+  <div class="back-bar">
+    <button class="btn-back" onclick="showPage('home')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+      Back to Home
+    </button>
+    <div class="breadcrumb">
+      <a onclick="showPage('home')">Home</a>
+      <span class="sep">›</span>
+      <span>Wishlist</span>
+    </div>
+  </div>
+  <div class="page-heading container rv rv-down">
+    <h1>Wishlist</h1>
+    <p>Your saved favourites</p>
+  </div>
+  <div class="wishlist-wrap">
+    <div class="products-grid" id="wishlist-grid"></div>
+    <div id="wishlist-empty" style="display:none;text-align:center;padding:60px 20px">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="var(--border)" stroke-width="1.5" style="margin:0 auto 16px"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      <p style="color:var(--text-muted)">Your wishlist is empty</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ────────────────────────────────────────
+     CHECKOUT PAGE
+──────────────────────────────────────── -->
+<div id="page-checkout" class="page">
+  <div class="back-bar">
+    <button class="btn-back" onclick="showPage('home')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+      Back to Home
+    </button>
+    <div class="breadcrumb">
+      <a onclick="showPage('home')">Home</a>
+      <span class="sep">›</span>
+      <a onclick="showPage('cart')">Cart</a>
+      <span class="sep">›</span>
+      <span>Checkout</span>
+    </div>
+  </div>
+  <div class="page-heading container rv rv-down">
+    <h1>Checkout</h1>
+    <p>Secure &amp; easy ordering</p>
+  </div>
+  <div class="checkout-wrap" id="checkout-content"></div>
+</div>
+
+
+<!-- ────────────────────────────────────────
+     POLICY PAGE
+──────────────────────────────────────── -->
+<div id="page-policy" class="page">
+  <div class="back-bar">
+    <button class="btn-back" onclick="showPage('home')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+      Back to Home
+    </button>
+    <div class="breadcrumb">
+      <a onclick="showPage('home')">Home</a>
+      <span class="sep">›</span>
+      <span id="policy-breadcrumb">Policy</span>
+    </div>
+  </div>
+  <div class="page-heading container">
+    <h1 id="policy-heading" class="rv rv-up"></h1>
+  </div>
+  <div class="policy-wrap rv rv-fade" id="policy-content"></div>
+</div>
+
+
+</div><!-- /main -->
+
+
+<!-- ══════════════════════════════════════════
+     MOBILE BOTTOM NAV
+══════════════════════════════════════════ -->
+<nav class="mobile-bottom-nav" role="navigation" aria-label="Mobile navigation">
+  <a href="#" class="bnav-tab active" data-tab="home" onclick="showPage('home');return false" aria-label="Home">
+    <span class="bnav-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></span>
+    <span class="bnav-label">Home</span>
+  </a>
+  <a href="https://wa.me/918109665754" target="_blank" rel="noopener" class="bnav-tab" data-tab="contact" aria-label="Contact">
+    <span class="bnav-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span>
+    <span class="bnav-label">Contact</span>
+  </a>
+  <a href="https://wa.me/918109665754?text=Hello%2C%20I%20have%20a%20query." target="_blank" rel="noopener" class="bnav-tab" data-tab="message" aria-label="Message">
+    <span class="bnav-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12zM7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"/></svg></span>
+    <span class="bnav-label">Message</span>
+  </a>
+  <a href="#" class="bnav-tab" data-tab="help" onclick="showPolicyPage('Return Policy');return false" aria-label="Help">
+    <span class="bnav-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg></span>
+    <span class="bnav-label">Help</span>
+  </a>
+</nav>
+
+
+<!-- ══════════════════════════════════════════
+     MODALS
+══════════════════════════════════════════ -->
+
+<!-- Login Modal -->
+<div class="modal-overlay" id="login-modal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('login-modal')">✕</button>
+    <div id="login-form-wrap">
+      <div class="modal-title">Welcome Back</div>
+      <div class="modal-sub">Login to your account</div>
+      <div class="form-group"><label>Email</label><input type="email" id="login-email" placeholder="your@email.com"></div>
+      <div class="form-group"><label>Password</label><input type="password" id="login-pass" placeholder="••••••••"></div>
+      <button class="btn-form" onclick="doLogin()">Login</button>
+      <div class="switch-form">Don't have an account? <a onclick="toggleSignup()">Sign up</a></div>
+    </div>
+    <div id="signup-form-wrap" style="display:none">
+      <div class="modal-title">Create Account</div>
+      <div class="modal-sub">Join the Namveda family</div>
+      <div class="form-group"><label>Full Name</label><input type="text" id="signup-name" placeholder="Your name"></div>
+      <div class="form-group"><label>Email</label><input type="email" id="signup-email" placeholder="your@email.com"></div>
+      <div class="form-group"><label>Phone</label><input type="tel" id="signup-phone" placeholder="+91 XXXXX XXXXX"></div>
+      <div class="form-group"><label>Password</label><input type="password" id="signup-pass" placeholder="••••••••"></div>
+      <button class="btn-form" onclick="doSignup()">Create Account</button>
+      <div class="switch-form">Have an account? <a onclick="toggleSignup()">Login</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- Success Modal -->
+<div class="modal-overlay" id="success-modal">
+  <div class="modal-box" style="text-align:center;padding:52px 36px">
+    <div class="success-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+    <div class="modal-title">Order Placed!</div>
+    <p style="margin:10px 0 16px;color:var(--text-muted);font-size:.88rem;line-height:1.7">Thank you for shopping with Namveda Ayurveda! Your order has been confirmed and will be delivered soon.</p>
+    <div class="order-id" id="order-id-text"></div>
+    <button class="btn-form" onclick="closeModal('success-modal');showPage('home');clearCart()" style="max-width:200px;margin:0 auto">Continue Shopping</button>
+  </div>
+</div>
+
+<!-- Toast -->
+<div id="toast"></div>
+
+<!-- Search results dropdown style -->
+<style>
+.search-results{position:absolute;top:calc(100% + 8px);left:0;right:0;background:#fff;border-radius:14px;box-shadow:0 8px 28px rgba(0,0,0,.12);z-index:200;max-height:280px;overflow-y:auto;display:none}
+.search-results.show{display:block}
+.search-result-item{padding:12px 18px;display:flex;align-items:center;gap:12px;cursor:pointer;transition:background .15s;border-bottom:1px solid #f0f0f0}
+.search-result-item:last-child{border-bottom:none}
+.search-result-item:hover{background:var(--light-green)}
+.search-result-item img{width:42px;height:42px;border-radius:8px;object-fit:cover;flex-shrink:0}
+.sr-name{font-size:.88rem;font-weight:500;color:var(--text)}
+.sr-price{font-size:.78rem;color:var(--accent);margin-top:2px}
+/* Hero search bar override */
+.hero-search-bar{max-width:540px;margin:0 auto;position:relative}
+.hero-search-bar input{width:100%;padding:15px 52px 15px 22px;border:2px solid rgba(255,255,255,.25);border-radius:50px;font-size:.95rem;background:rgba(255,255,255,.1);color:#fff;font-family:var(--font-sans);outline:none;transition:border-color .2s,background .2s;backdrop-filter:blur(8px)}
+.hero-search-bar input::placeholder{color:rgba(255,255,255,.5)}
+.hero-search-bar input:focus{border-color:rgba(255,255,255,.5);background:rgba(255,255,255,.15)}
+.hero-search-bar button{position:absolute;right:7px;top:50%;transform:translateY(-50%);background:var(--gold);border:none;color:#fff;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background .2s;cursor:pointer}
+.hero-search-bar button:hover{background:#a07840}
+.hero-search-bar .search-results{background:#fff}
+</style>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
